@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Trivia Game</title>
+  </head>
+  <body>
+    <section class="playerDetails">
+      <h2>Trivia Game</h2>
+      <form class="entryForm">
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" placeholder="Enter player 1 name" />
+        <br />
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" placeholder="Enter player 2 name" />
+        <br />
+        <button class="enterBtn">Enter</button>
+      </form>
+    </section>
+    <section class="categoryDetails hidden">
+      <h2>Game options</h2>
+      <label for="category">Choose one:</label>
+      <select name="category" id="category">
+        <option value="">--</option>
+        <option value="music">Music</option>
+        <option value="geography">Geography</option>
+        <option value="food_and_drink">Food and Drink</option>
+        <option value="general_knowledge">GK</option>
+        <option value="sport_and_leisure">Sports</option>
+        <option value="film_and_tv">Film and TV</option>
+      </select>
+      <button class="startBtn">Start</button>
+    </section>
+    <section class="questionSection hidden">
+      <div>
+        <p class="turn"></p>
+        <p class="question"></p>
+        <div class="options"></div>
+      </div>
+      <button class="nextBtn">Next</button>
+    </section>
+    <section class="lastSection hidden">
+      <div class="end hidden">
+        <p class="firstScore"></p>
+        <p class="secondScore"></p>
+        <p class="result"></p>
+        <p>See you soon!</p>
+      </div>
+      <div class="playAgain hidden">
+        <button class="continue">Continue</button>
+        <button class="exit">Exit Game</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

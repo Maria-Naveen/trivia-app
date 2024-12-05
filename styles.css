@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 1.5em;
+}
+
+.playerDetails,
+.categoryDetails,
+.questionSection,
+.lastSection {
+  width: 60%;
+  max-width: 500px;
+  text-align: center;
+  border: 2px solid yellowgreen;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.entryForm label {
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.enterBtn,
+.startBtn,
+.nextBtn,
+.continue,
+.exit {
+  width: 20%;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 5em;
+  background-color: yellowgreen;
+}
+
+.questionSection .options button {
+  width: 70%;
+  margin: 0.2em;
+  padding: 0.3em;
+  cursor: pointer;
+}
